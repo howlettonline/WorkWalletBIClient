@@ -23,6 +23,7 @@
     <None Remove="Scripts\Schema\0010 - Location ExternalIdentifier.sql" />
     <None Remove="Scripts\Schema\0011 - Rename FK constraints.sql" />
     <None Remove="Scripts\Schema\0012 - SafetyCards.sql" />
+    <None Remove="Scripts\Schema\0018 - ActionsOriginalDueDate.sql" />
     <None Remove="Scripts\StoredProcedures\mart.ETL_DeleteActionFacts.sql" />
     <None Remove="Scripts\StoredProcedures\mart.ETL_DeleteAssetFacts.sql" />
     <None Remove="Scripts\StoredProcedures\mart.ETL_DeleteInductionFacts.sql" />
@@ -126,6 +127,7 @@
     <EmbeddedResource Include="Scripts\Schema\0007 - Actions.sql" />
     <EmbeddedResource Include="Scripts\Schema\0008 - PermitsFix.sql" />
     <EmbeddedResource Include="Scripts\Schema\0009 - Assets.sql" />
+    <EmbeddedResource Include="Scripts\Schema\0018 - ActionsOriginalDueDate.sql" />
     <EmbeddedResource Include="Scripts\StoredProcedures\mart.ETL_LoadAuditScoreTagFact.sql" />
     <EmbeddedResource Include="Scripts\StoredProcedures\mart.ETL_MaintainAuditScoreTagDimension.sql" />
     <EmbeddedResource Include="Scripts\StoredProcedures\mart.ETL_LoadAuditScoreSectionFact.sql" />
