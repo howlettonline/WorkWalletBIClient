@@ -79,7 +79,7 @@ table 'Stock History'
 
 	column 'Actioned On'
 		dataType: dateTime
-		formatString: General Date
+		formatString: dd/mm/yyyy hh:nn
 		lineageTag: c0abd62c-bf0f-4cff-9c44-7596768726b7
 		summarizeBy: none
 		sourceColumn: Actioned On
@@ -90,6 +90,8 @@ table 'Stock History'
 			defaultHierarchy: LocalDateTable_0b142ea6-4d11-4451-b39c-7a919543f3ec.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column Notes
 		dataType: string
@@ -110,6 +112,29 @@ table 'Stock History'
 		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = User
+
+	column 'Stock Location' = RELATED(Location[Location])
+		lineageTag: c5df8748-c6a2-44f6-9687-de9f55cbc3d3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transferred From Stock Location' =
+			
+			VAR FromStockKey = 'Stock History'[TransferredFromPPEStock_key]
+			VAR LocationKey = LOOKUPVALUE(
+			    Stock[Location_key],
+			    Stock[PPEStock_key], FromStockKey
+			)
+			RETURN
+			LOOKUPVALUE(
+			    Location[Location],
+			    Location[Location_key], LocationKey
+			)
+		lineageTag: 6fc98843-3986-4182-8262-ff03f5a34ea2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'Stock History' = m
 		mode: import

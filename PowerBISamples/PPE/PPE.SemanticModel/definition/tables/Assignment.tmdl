@@ -171,7 +171,19 @@ table Assignment
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Require Replacement' = IF(ISBLANK(Assignment[Replacement Requested On]), IF(NOT(ISBLANK(Assignment[Expired On])) && Assignment[Expired On] <= TODAY(), TRUE, FALSE), TRUE)
+	column 'Require Replacement' =
+			
+			IF
+			(
+			    ISBLANK(Assignment[Replacement Requested On]),
+			    IF
+			    (
+			        NOT(ISBLANK(Assignment[Expired On])) && Assignment[Expired On] <= TODAY(),
+			        TRUE,
+			        FALSE
+			    ),
+			    TRUE
+			)
 		formatString: """TRUE"";""TRUE"";""FALSE"""
 		lineageTag: 81ff963b-d591-4dc5-934c-646beb4573b7
 		summarizeBy: none
