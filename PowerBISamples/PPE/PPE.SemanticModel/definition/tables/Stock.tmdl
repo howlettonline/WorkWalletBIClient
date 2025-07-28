@@ -50,7 +50,7 @@ table Stock
 
 	column 'Stock Quantity'
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: 288f4829-a998-4459-9496-92eff9261fe4
 		summarizeBy: sum
 		sourceColumn: Stock Quantity
