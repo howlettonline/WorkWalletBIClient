@@ -4151,116 +4151,12 @@ cultureInfo en-GB
 			        },
 			        {
 			          "date hierarchy": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "hierarchy": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
-			        },
-			        {
-			          "expired on moment hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "expired on period hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "moment hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period hierarchy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "expired on date ladder": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "expired on date grading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "expired on date order": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "expired on date pyramid": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.499
-			          }
-			        },
-			        {
-			          "date ladder": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "date grading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "assignment.expired_on.year": {
 			      "Definition": {
@@ -4304,7 +4200,8 @@ cultureInfo en-GB
 			            "Weight": 0.736
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "assignment.expired_on.quarter": {
 			      "Definition": {
@@ -4348,7 +4245,8 @@ cultureInfo en-GB
 			            "Weight": 0.818
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "assignment.expired_on.month": {
 			      "Definition": {
@@ -4392,7 +4290,8 @@ cultureInfo en-GB
 			            "Weight": 0.736
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "assignment.expired_on.day": {
 			      "Definition": {
@@ -4416,7 +4315,8 @@ cultureInfo en-GB
 			            "State": "Generated"
 			          }
 			        }
-			      ]
+			      ],
+			      "SemanticType": "Time"
 			    },
 			    "assignment.PPE_status_key": {
 			      "Definition": {
@@ -9460,14 +9360,13 @@ cultureInfo en-GB
 			      "Terms": [
 			        {
 			          "PPE type": {
-			            "State": "Generated",
-			            "Weight": 0.87
+			            "State": "Generated"
 			          }
 			        },
 			        {
 			          "type": {
 			            "State": "Generated",
-			            "Weight": 0.8439
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -10013,6 +9912,11 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
+			          "PPE type name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "type": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -10118,7 +10022,8 @@ cultureInfo en-GB
 			            "Weight": 0.727
 			          }
 			        }
-			      ]
+			      ],
+			      "NameType": "Name"
 			    },
 			    "PPE_type.PPE_variant": {
 			      "Definition": {
@@ -12621,16 +12526,6 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
-			          "stock site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
 			          "stock spot": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -12641,7 +12536,27 @@ cultureInfo en-GB
 			          }
 			        },
 			        {
+			          "inventory location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
 			          "Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "To": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12987,143 +12902,581 @@ cultureInfo en-GB
 			            },
 			            "Weight": 0.748
 			          }
+			        },
+			        {
+			          "Original Stock Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "stock.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stock",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "stock.stock_site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stock",
+			          "ConceptualProperty": "Stock Site"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock site": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stock website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock campus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock homepage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "inventory site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Stock Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "stock.stock_location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stock",
+			          "ConceptualProperty": "Stock Location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock location": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stock locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "inventory location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "stock_history.stock_site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stock History",
+			          "ConceptualProperty": "Stock Site"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock site": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stock website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock campus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock homepage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "stock place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "inventory site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Stock Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "stock_history.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stock History",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "assignment_history_actioned_on_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment History"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment_history.actioned_on": {
-			          "Target": {
-			            "Entity": "assignment_history.actioned_on"
-			          }
-			        },
-			        "assignment_history.actioned_on.date_hierarchy": {
-			          "Target": {
-			            "Entity": "assignment_history.actioned_on.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment_history.actioned_on"
-			            },
-			            "Object": {
-			              "Role": "assignment_history.actioned_on.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "actioned_on_have_actioned_on_date_hierarchy"
-			        }
-			      ]
-			    },
-			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.replacement_requested_on.date_hierarchy": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
-			          }
-			        },
-			        "assignment.replacement_requested_on.day": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.replacement_requested_on.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "assignment.replacement_requested_on.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_day"
-			        }
-			      ]
-			    },
-			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.replacement_requested_on.date_hierarchy": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
-			          }
-			        },
-			        "assignment.replacement_requested_on.month": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.replacement_requested_on.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "assignment.replacement_requested_on.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_month"
-			        }
-			      ]
-			    },
-			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.replacement_requested_on.date_hierarchy": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
-			          }
-			        },
-			        "assignment.replacement_requested_on.quarter": {
-			          "Target": {
-			            "Entity": "assignment.replacement_requested_on.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.replacement_requested_on.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "assignment.replacement_requested_on.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_quarter"
-			        }
-			      ]
-			    },
 			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Assignment"
@@ -13187,204 +13540,6 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "replacement_requested_on_have_replacement_requested_on_date_hierarchy"
-			        }
-			      ]
-			    },
-			    "assignment_expired_on_month_has_assignment_expired_on_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.expired_on.month": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.month"
-			          }
-			        },
-			        "assignment.expired_on.day": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.month"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_month_have_expired_on_day"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.day"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_day_have_expired_on_month"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.day"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "assignment.expired_on.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_day_are_in_expired_on_month"
-			        }
-			      ]
-			    },
-			    "assignment_expired_on_quarter_has_assignment_expired_on_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.expired_on.quarter": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.quarter"
-			          }
-			        },
-			        "assignment.expired_on.month": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.quarter"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_quarter_have_expired_on_month"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.month"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_month_have_expired_on_quarter"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.month"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "assignment.expired_on.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_month_are_in_expired_on_quarter"
-			        }
-			      ]
-			    },
-			    "assignment_expired_on_year_has_assignment_expired_on_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Assignment"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "assignment.expired_on.year": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.year"
-			          }
-			        },
-			        "assignment.expired_on.quarter": {
-			          "Target": {
-			            "Entity": "assignment.expired_on.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.year"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_year_have_expired_on_quarter"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.quarter"
-			            },
-			            "Object": {
-			              "Role": "assignment.expired_on.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_quarter_have_expired_on_year"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "assignment.expired_on.quarter"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "assignment.expired_on.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "expired_on_quarter_are_in_expired_on_year"
 			        }
 			      ]
 			    },
@@ -14409,6 +14564,225 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
+			    "stock_history_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock History"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock_history": {
+			          "Target": {
+			            "Entity": "stock_history"
+			          }
+			        },
+			        "stock_history.value": {
+			          "Target": {
+			            "Entity": "stock_history.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stock_history"
+			            },
+			            "Object": {
+			              "Role": "stock_history.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stock_histories_have_values"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "stock_history"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "stock_history.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "value_indicates_how_expensive_stock_histories_are"
+			        }
+			      ]
+			    },
+			    "stock_history_has_stock_site": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock History"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock_history": {
+			          "Target": {
+			            "Entity": "stock_history"
+			          }
+			        },
+			        "stock_history.stock_site": {
+			          "Target": {
+			            "Entity": "stock_history.stock_site"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stock_history"
+			            },
+			            "Object": {
+			              "Role": "stock_history.stock_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stock_histories_have_stock_sites"
+			        }
+			      ]
+			    },
+			    "stock_has_stock_location": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock": {
+			          "Target": {
+			            "Entity": "stock"
+			          }
+			        },
+			        "stock.stock_location": {
+			          "Target": {
+			            "Entity": "stock.stock_location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Object": {
+			              "Role": "stock.stock_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stocks_have_stock_locations"
+			        }
+			      ]
+			    },
+			    "stock_has_stock_site": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock": {
+			          "Target": {
+			            "Entity": "stock"
+			          }
+			        },
+			        "stock.stock_site": {
+			          "Target": {
+			            "Entity": "stock.stock_site"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Object": {
+			              "Role": "stock.stock_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stocks_have_stock_sites"
+			        }
+			      ]
+			    },
+			    "stock_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock": {
+			          "Target": {
+			            "Entity": "stock"
+			          }
+			        },
+			        "stock.value": {
+			          "Target": {
+			            "Entity": "stock.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Object": {
+			              "Role": "stock.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stocks_have_values"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "stock.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "value_indicates_how_expensive_stocks_are"
+			        }
+			      ]
+			    },
 			    "assignment_has_assigned_from_stock_site": {
 			      "Binding": {
 			        "ConceptualEntity": "Assignment"
@@ -14503,6 +14877,33 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "assignments_have_values"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "assignment"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "assignment.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "value_indicates_how_expensive_assignments_are"
 			        }
 			      ]
 			    },
@@ -14620,6 +15021,26 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "stock_histories_have_stock_locations"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "stock_history"
+			            },
+			            "Prepositions": [
+			              {
+			                "To": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "stock_history.stock_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stock_histories_are_To_stock_locations"
 			        }
 			      ]
 			    },
@@ -15247,6 +15668,19 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "PPE_types_have_PPE_types"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "PPE_type"
+			            },
+			            "Name": {
+			              "Role": "PPE_type.PPE_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PPE_types_are_names_IDs_of_PPE_types"
 			        }
 			      ]
 			    },
@@ -16250,6 +16684,186 @@ cultureInfo en-GB
 			        }
 			      ]
 			    },
+			    "stock_history_in_stock_site": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock History"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock_history": {
+			          "Target": {
+			            "Entity": "stock_history"
+			          }
+			        },
+			        "stock_history.stock_site": {
+			          "Target": {
+			            "Entity": "stock_history.stock_site"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "stock_history.stock_site"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "stock_history"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "stock_history.stock_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stock_histories_are_in_stock_sites"
+			        }
+			      ]
+			    },
+			    "stock_in_stock_location": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock": {
+			          "Target": {
+			            "Entity": "stock"
+			          }
+			        },
+			        "stock.stock_location": {
+			          "Target": {
+			            "Entity": "stock.stock_location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "stock.stock_location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "stock.stock_location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stocks_are_in_stock_locations"
+			        }
+			      ]
+			    },
+			    "stock_in_stock_site": {
+			      "Binding": {
+			        "ConceptualEntity": "Stock"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stock": {
+			          "Target": {
+			            "Entity": "stock"
+			          }
+			        },
+			        "stock.stock_site": {
+			          "Target": {
+			            "Entity": "stock.stock_site"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "stock.stock_site"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "stock"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "stock.stock_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stocks_are_in_stock_sites"
+			        }
+			      ]
+			    },
+			    "assignment_in_assigned_from_stock_site": {
+			      "Binding": {
+			        "ConceptualEntity": "Assignment"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "assignment": {
+			          "Target": {
+			            "Entity": "assignment"
+			          }
+			        },
+			        "assignment.assigned_from_stock_site": {
+			          "Target": {
+			            "Entity": "assignment.assigned_from_stock_site"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "assignment.assigned_from_stock_site"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "assignment"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "assignment.assigned_from_stock_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "assignments_are_in_assigned_from_stock_site"
+			        }
+			      ]
+			    },
 			    "stock_history_in_transferred_from_stock_location": {
 			      "Binding": {
 			        "ConceptualEntity": "Stock History"
@@ -16952,6 +17566,138 @@ cultureInfo en-GB
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_PPE_types_are_type_deleted_PPE_types"
+			        }
+			      ]
+			    },
+			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Assignment"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "assignment.replacement_requested_on.date_hierarchy": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
+			          }
+			        },
+			        "assignment.replacement_requested_on.quarter": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "assignment.replacement_requested_on.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "assignment.replacement_requested_on.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_quarter"
+			        }
+			      ]
+			    },
+			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Assignment"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "assignment.replacement_requested_on.date_hierarchy": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
+			          }
+			        },
+			        "assignment.replacement_requested_on.month": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "assignment.replacement_requested_on.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "assignment.replacement_requested_on.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_month"
+			        }
+			      ]
+			    },
+			    "assignment_replacement_requested_on_date_hierarchy_has_assignment_replacement_requested_on_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Assignment"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "assignment.replacement_requested_on.date_hierarchy": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.date_hierarchy"
+			          }
+			        },
+			        "assignment.replacement_requested_on.day": {
+			          "Target": {
+			            "Entity": "assignment.replacement_requested_on.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "assignment.replacement_requested_on.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "assignment.replacement_requested_on.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "replacement_requested_on_date_hierarchy_have_replacement_requested_on_day"
+			        }
+			      ]
+			    },
+			    "assignment_history_actioned_on_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Assignment History"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "assignment_history.actioned_on": {
+			          "Target": {
+			            "Entity": "assignment_history.actioned_on"
+			          }
+			        },
+			        "assignment_history.actioned_on.date_hierarchy": {
+			          "Target": {
+			            "Entity": "assignment_history.actioned_on.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "assignment_history.actioned_on"
+			            },
+			            "Object": {
+			              "Role": "assignment_history.actioned_on.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "actioned_on_have_actioned_on_date_hierarchy"
 			        }
 			      ]
 			    },

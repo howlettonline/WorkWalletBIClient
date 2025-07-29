@@ -62,7 +62,7 @@ table 'Stock History'
 
 	column 'Stock Quantity'
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: d48dbe20-d762-4a70-bb85-9b13b4ed8fac
 		summarizeBy: sum
 		sourceColumn: Stock Quantity
@@ -136,11 +136,26 @@ table 'Stock History'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Stock Site' = RELATED(Location[Site])
+		lineageTag: 784babd8-a319-486b-935a-c84361626048
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value = RELATED('PPE Type'[Value]) * 'Stock History'[Stock Quantity]
+		formatString: "£"#,0.00;-"£"#,0.00;"£"#,0.00
+		lineageTag: 2c2a43e4-3934-4d32-ba30-c8ec49c2fbd0
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
 	partition 'Stock History' = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("CAKESOFBREAD", "WorkWalletBIClient_Local"),
+				    Source = Sql.Database("CAKESOFBREAD", "WorkWalletBIClient_Demo"),
 				    mart_PPEStockHistory = Source{[Schema="mart",Item="PPEStockHistory"]}[Data],
 				    #"Removed Columns" = Table.RemoveColumns(mart_PPEStockHistory,{"_created", "_edited"}),
 				    #"Renamed Columns" = Table.RenameColumns(#"Removed Columns",{{"StockQuantity", "Stock Quantity"}, {"ActionedBy", "Actioned By"}, {"ActionedOn", "Actioned On"}})

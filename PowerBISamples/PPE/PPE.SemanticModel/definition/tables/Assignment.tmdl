@@ -183,12 +183,13 @@ table Assignment
 		annotation SummarizationSetBy = Automatic
 
 	column Value = RELATED('PPE Assignment Type'[Value])
+		formatString: "£"#,0.00;-"£"#,0.00;"£"#,0.00
 		lineageTag: be70e25d-57d3-436c-97b9-81285e7a0a48
 		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
 
 	column 'Assigned From Stock Site' =
 			
@@ -211,7 +212,7 @@ table Assignment
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("CAKESOFBREAD", "WorkWalletBIClient_Local"),
+				    Source = Sql.Database("CAKESOFBREAD", "WorkWalletBIClient_Demo"),
 				    mart_PPEAssignment = Source{[Schema="mart",Item="PPEAssignment"]}[Data],
 				    #"Removed Columns" = Table.RemoveColumns(mart_PPEAssignment,{"_created", "_edited"}),
 				    #"Renamed Columns" = Table.RenameColumns(#"Removed Columns",{{"AssignedTo", "Assigned To"}, {"AssignedOn", "Assigned On"}, {"ExpiredOn", "Expired On"}, {"ReplacementRequestedOn", "Replacement Requested On"}})

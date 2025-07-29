@@ -227,7 +227,7 @@
           "nodeIndex": "Stock History",
           "nodeLineageTag": "5f547d8f-0fbd-45e3-b10a-b114ab53ed5c",
           "size": {
-            "height": 354,
+            "height": 431,
             "width": 269
           },
           "zIndex": 2
@@ -360,6 +360,6 @@
       "tablesLocked": false
     }
   ],
-  "selectedDiagram": "Assignments",
+  "selectedDiagram": "Stock History",
   "defaultDiagram": "All tables"
 }
