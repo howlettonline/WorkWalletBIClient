@@ -1,13 +1,6 @@
 table Assignment
 	lineageTag: 4cd4c7b8-78ce-4f8e-927e-e92f949db79b
 
-	measure 'Assigned Count' =
-			
-			var result = COUNT(Assignment[_Count])
-			RETURN IF(ISBLANK(result), 0, result)
-		formatString: #,0
-		lineageTag: 2d1c1726-20d6-4066-a5b7-e2b0e6ffc22a
-
 	column PPEAssignment_key
 		dataType: int64
 		isHidden
@@ -161,8 +154,7 @@ table Assignment
 
 		annotation SummarizationSetBy = User
 
-	column _Count = 1
-		isHidden
+	column 'Assigned Count' = 1
 		formatString: #,0
 		lineageTag: 316ed20d-2bd1-45c7-a14f-0d17265333e5
 		summarizeBy: sum
@@ -186,6 +178,31 @@ table Assignment
 			)
 		formatString: """TRUE"";""TRUE"";""FALSE"""
 		lineageTag: 81ff963b-d591-4dc5-934c-646beb4573b7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value = RELATED('PPE Assignment Type'[Value])
+		lineageTag: be70e25d-57d3-436c-97b9-81285e7a0a48
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Assigned From Stock Site' =
+			
+			VAR FromStockKey = 'Assignment'[AssignedFromPPEStock_key]
+			VAR LocationKey = LOOKUPVALUE(
+			    Stock[Location_key],
+			    Stock[PPEStock_key], FromStockKey
+			)
+			RETURN
+			LOOKUPVALUE(
+			    Location[Site],
+			    Location[Location_key], LocationKey
+			)
+		lineageTag: 28ca9e98-979d-4270-98a0-667da02d6649
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
