@@ -105,4 +105,4 @@ Power BI connects directly to SQL Server database - no intermediate files or API
 - **.NET 8.0**: All projects target this runtime
 - **Microsoft.Data.SqlClient**: Database connectivity
 - **DbUp**: Database deployment and versioning
-- **Newtonsoft.Json**: API response processing (not System.Text.Json)
+- **System.Text.Json**: API response processing
