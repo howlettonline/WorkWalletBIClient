@@ -18,7 +18,7 @@ public class ProcessorService(
 {
     private readonly ProcessorServiceOptions _serviceOptions = serviceOptions.Value;
     
-    // the wallet endpoint uses camel case (the dataextract endpoints use psacal case)
+    // the wallet endpoint uses camel case (the dataextract endpoints use pascal case)
     private static readonly JsonSerializerOptions _jsonCamelCaseOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase
