@@ -82,8 +82,8 @@ public class ProcessorService(
         }
 
         int pageNumber = 0;
-        int totalPages;
         Context context;
+        long? firstPageSynchronizationVersion = null;
 
         // we support data paging in order to be able to cope with large result sets
         progressService.StartShowProgress(dataType, !lastSynchronizationVersion.HasValue);
@@ -126,16 +126,18 @@ public class ProcessorService(
                 throw new ApiErrorResponseException(context.Error, walletContext.Id, dataType);
             }
 
-            // now we know how many rows there are in total, we can calculate the total number of pages we need to fetch
-            // note that we want to calculate this every iteration (in case server data has been added to)
-            totalPages = (context.FullCount - 1) / context.PageSize + 1;
-
             logger.LogDebug("API for {DataType} returned JSON of length {Length}", dataType, json.Length);
             logger.LogDebug("Count: {Count}", context.Count);
             logger.LogDebug("FullCount: {FullCount}", context.FullCount);
             logger.LogDebug("LastSynchronizationVersion: {LastSynchronizationVersion}", context.LastSynchronizationVersion);
             logger.LogDebug("SynchronizationVersion: {SynchronizationVersion}", context.SynchronizationVersion);
-            logger.LogDebug("PageNumber: {PageNumber} / {totalPages}, PageSize: {PageSize}", context.PageNumber, totalPages, context.PageSize);
+            logger.LogDebug("PageNumber: {PageNumber}, PageSize: {PageSize}", context.PageNumber, context.PageSize);
+
+            // capture the SynchronizationVersion from the first page to use as the high watermark
+            if (pageNumber == 1)
+            {
+                firstPageSynchronizationVersion = context.SynchronizationVersion;
+            }
 
             if (context.Count > 0)
             {
@@ -149,12 +151,14 @@ public class ProcessorService(
                 logger.LogDebug($"No records to load");
             }
 
-        } while (pageNumber < totalPages);
+        } while (context.Count == context.PageSize);
         progressService.EndShowProgress(context.FullCount);
 
         // update our change detection / logging table, so we only fetch new and changed data next time
         // (must do this, even if no rows are obtained as lastSynchronizationVersion can otherwise become invalid)
-        await dataStore.UpdateLastSyncAsync(walletContext.Id, logType, context.SynchronizationVersion, context.FullCount);
+        // use the SynchronizationVersion from the first page to avoid missing changes that occur during paging
+        long synchronizationVersionToRecord = firstPageSynchronizationVersion ?? context.SynchronizationVersion;
+        await dataStore.UpdateLastSyncAsync(walletContext.Id, logType, synchronizationVersionToRecord, context.FullCount);
 
         if (context.FullCount > 0)
         {

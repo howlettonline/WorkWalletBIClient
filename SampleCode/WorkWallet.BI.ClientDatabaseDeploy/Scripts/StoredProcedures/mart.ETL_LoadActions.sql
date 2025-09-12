@@ -98,7 +98,7 @@ BEGIN
             ,WalletId uniqueidentifier
         );
 
-        EXEC mart.ETL_LoadActionUpdates @actionUpdateTable = @actionUpdateTable
+        EXEC mart.ETL_LoadActionUpdates @actionUpdateTable = @actionUpdateTable;
 
         COMMIT TRANSACTION;
     END TRY
